@@ -7,7 +7,7 @@ from model import TransformerImageCaptioning
 from config import get_hyperparams
 import torch
 warnings.filterwarnings('ignore')
-device = 'mps' if torch.backends.mps.is_available else 'cpu'
+device = 'cpu'
 
 
 hp = get_hyperparams()

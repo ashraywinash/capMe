@@ -58,7 +58,7 @@ def generate_caption(model, patches, start_token_idx, eos_token_idx, max_caption
 
 
 if __name__ == '__main__':
-    device = "mps"
+    device = "cpu"
     # read the df and preprocess it
     results : pd.DataFrame = get_dataframe_preprocessed('./captions.xls')
     tokenizer = get_tokeniser(results)
