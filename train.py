@@ -60,7 +60,7 @@ def train_model(model,
 
 
 if __name__ == '__main__':
-    device : str = "mps" if torch.backends.mps.is_available else "cpu"
+    device : str = "cpu"
     torch.device = device
     config : dict = getConfig()
     # read the df and preprocess it
